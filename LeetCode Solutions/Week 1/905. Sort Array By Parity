@@ -1,0 +1,15 @@
+class Solution(object):
+    def sortArrayByParity(self, A):
+        """
+        :type A: List[int]
+        :rtype: List[int]
+        """
+        outpu = []
+        for x in range(len(A)):
+            if (A[x]%2 == 0):
+                output.append(A[x])
+        for x in range(len(A)):
+            if (A[x]%2 == 1):  
+                output.append(A[x])
+        return output
+        
