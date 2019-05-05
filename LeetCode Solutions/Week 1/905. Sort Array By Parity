@@ -5,11 +5,11 @@ class Solution(object):
         :rtype: List[int]
         """
         outpu = []
-        for x in range(len(A)):
-            if (A[x]%2 == 0):
-                output.append(A[x])
-        for x in range(len(A)):
-            if (A[x]%2 == 1):  
-                output.append(A[x])
+        for x in range(len(A))://cycles through the inputed array
+            if (A[x]%2 == 0)://checks if number is even
+                output.append(A[x])//adds to new array
+        for x in range(len(A))://cycles through the inputed array
+            if (A[x]%2 == 1):  //checks if number is even
+                output.append(A[x])/adds to new array
         return output
         
