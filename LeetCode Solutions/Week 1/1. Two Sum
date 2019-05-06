@@ -1,0 +1,19 @@
+class Solution(object):
+       def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        indexs = []
+        for x in range (len(nums)):
+            other= target - nums[x]
+            if other in nums:
+                
+                if x!=(nums.index(other)):
+                    indexs.append(x)
+                    indexs.append(nums.index(other))
+                    return indexs
+                else:
+                    x+=1
+        
