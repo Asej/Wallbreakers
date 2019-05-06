@@ -1,0 +1,14 @@
+class Solution(object):
+    def selfDividingNumbers(self, left, right):
+        """
+        : type left: int: type right: int: rtype: List[int]
+        """
+        nums = []
+
+        for x in range(left, right + 1):
+            for place in str(x):
+                if int(place) == 0 or x % int(place) != 0:
+                    break
+            else :
+                nums.append(x)
+        return nums
